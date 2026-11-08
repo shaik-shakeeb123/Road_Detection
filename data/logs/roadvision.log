@@ -1,0 +1,56 @@
+2026-11-03 22:29:00,257 ERROR roadvision.model Model initialization failed for YOLO26m
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 33, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 44, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable
+2026-11-03 22:29:00,259 ERROR roadvision.model Model initialization failed for YOLO26n
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 33, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 44, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable
+2026-11-04 19:12:27,319 ERROR roadvision.model Model initialization failed for YOLO26m
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 35, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 46, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable
+2026-11-04 19:12:27,325 ERROR roadvision.model Model initialization failed for YOLO26n
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 35, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 46, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable
+2026-11-04 20:24:32,376 ERROR roadvision.model Model initialization failed for YOLO26m
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 35, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 46, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable
+2026-11-04 20:24:32,379 ERROR roadvision.model Model initialization failed for YOLO26n
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 35, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 46, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable
+2026-11-08 12:59:36,909 ERROR roadvision.model Model initialization failed for YOLO26m
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 35, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 46, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable
+2026-11-08 12:59:36,915 ERROR roadvision.model Model initialization failed for YOLO26n
+Traceback (most recent call last):
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 35, in startup
+    self._models[name] = self._load_and_validate(name)
+  File "D:\Road_detection\backend\app\services\model_manager.py", line 46, in _load_and_validate
+    raise FileNotFoundError("checkpoint unavailable")
+FileNotFoundError: checkpoint unavailable

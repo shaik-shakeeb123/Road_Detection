@@ -25,10 +25,13 @@ build/
 *.tsbuildinfo
 
 # Runtime data (SQLite DB, uploads, generated outputs)
-data/
+# data/ is intentionally tracked; the rules below still block stray
+# db/log files elsewhere in the repo.
 *.sqlite
 *.sqlite3
 *.db
+*.log
+logs/
 
 # Model weights and datasets (never commit checkpoints)
 weights/
@@ -60,3 +63,7 @@ desktop.ini
 *.temp
 *.bak
 ~$*
+
+# Re-include the project data directory (must come last so it wins
+# over the *.log / *.sqlite / *.db / logs/ rules above)
+!data/**
