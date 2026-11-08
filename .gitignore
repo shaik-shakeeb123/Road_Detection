@@ -40,6 +40,10 @@ weights/
 *.pkl
 datasets/
 
+# Design references (local only, never commit)
+design_refernces/
+design_references/
+
 # Logs
 *.log
 logs/
