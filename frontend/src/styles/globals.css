@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #2B2D35;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scrollbar-gutter: stable;
+  }
+
+  body {
+    background-color: #090A0F;
+    color: #F5F5F5;
+    font-family: 'Lato', system-ui, -apple-system, sans-serif;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Accessible high-contrast focus indicators */
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px #090A0F, 0 0 0 4px rgba(224, 234, 108, 0.6);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2B2D35;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #3E424E;
+  }
+}
+
+@layer components {
+  .obsidian-card {
+    background-color: #18181C;
+    border: 1px solid #2B2D35;
+    border-radius: 0.75rem;
+  }
+
+  .obsidian-card-hover {
+    background-color: #18181C;
+    border: 1px solid #2B2D35;
+    border-radius: 0.75rem;
+    transition: background-color 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+                border-color 0.15s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .obsidian-card-hover:hover {
+    background-color: #202127;
+    border-color: #3E424E;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  }
+
+  .material-symbols-outlined {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 20;
+    line-height: 1;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Subtle shimmer for skeleton loading */
+  .shimmer-effect {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.04) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.8s infinite linear;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Reduced motion preference honoring */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .shimmer-effect {
+    animation: none !important;
+  }
+}
